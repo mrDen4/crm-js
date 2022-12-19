@@ -1,0 +1,162 @@
+.clients {
+    .clients__container {
+        flex-direction: column;
+      }
+      
+      .clients__title {
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 33px;
+        color: $black;
+      }
+      
+      .clients__table {
+        border-spacing: 0;
+        margin-bottom: 40px;
+      }
+      
+      .table__text {
+        font-size: 12px;
+        line-height: 16px;
+        color: $gray;
+        font-weight: 400;
+      }
+      
+      .table__text--color {
+        color: $purple;
+      }
+      
+      .table__sort {
+        background: url('./images/arrow-filter.svg');
+        width: 8px;
+        height: 8px;
+        margin: 0 2px;
+      }
+      
+      .table__block {
+        display: flex;
+        align-items: center;
+        padding: 10px;
+      }
+      
+      thead .table__row--head {
+        cursor: pointer;
+      }
+      
+      .table__item {
+        font-size: 12px;
+      }
+      
+      .table__item--id {
+        color: $gray;
+      }
+      
+      .table__item--fio {
+        font-size: 14px;
+        line-height: 19px;
+        color: $black;
+      }
+      
+      .table__item--date .table__text {
+        font-size: 14px;
+        line-height: 19px;
+        color: $black;
+        margin-right: 10px;
+      }
+      
+      .table__item--date .table__text--opacity {
+        color: $gray;
+      }
+      
+      .table__link {
+        width: 16px;
+        height: 16px;
+        margin-right: 7px;
+        opacity: 0.7;
+        transition: 0.5s;
+      }
+      
+      .table__link:hover {
+        opacity: 1;
+      }
+      
+      .table__link--vk {
+        background: url('./images/contacts/vk.svg');
+      }
+      
+      .table__link--fb {
+        background: url('./images/contacts/fb.svg');
+      }
+      
+      .table__link--tel {
+        background: url('./images/contacts/tel.svg');
+      }
+      
+      .table__link--mail {
+        background: url('./images/contacts/mail.svg');
+      }
+      
+      .table__link--user {
+        background: url('./images/contacts/user.svg');
+      }
+      
+      .table__btn {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 19px;
+        color: $black;
+        border: none;
+        background: none;
+        display: flex;
+        cursor: pointer;
+        transition: 0.5s;
+      }
+      
+      .table__btn:hover {
+        opacity: 0.7;
+      }
+      
+      tbody .table__row {
+        background: $white;
+      }
+      
+      .table__btn--change::before {
+        content: '';
+        background: url('./images/edit.svg');
+        width: 16px;
+        height: 16px;
+      }
+      
+      .table__btn--delete::before {
+        content: '';
+        background: url('./images/cancel.svg');
+        width: 16px;
+        height: 16px;
+      }
+      
+      .clients__btn {
+        border: 1px solid $purple;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 19px;
+        color: $purple;
+        display: flex;
+        padding: 12px 26px;
+        background: none;
+        align-self: center;
+        cursor: pointer;
+        transition: .5s;
+      }
+      
+      .clients__btn:hover {
+          opacity: .7;
+      }
+      
+      .clients__btn::before {
+        content: '';
+        width: 22px;
+        height: 16px;
+        background: url('./images/add-user.svg');
+        margin-right: 10px;
+      }
+}

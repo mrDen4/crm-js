@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRM</title>
+<script defer src="main.f103eaf21c086887593d.js"></script></head>
+
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="container header__container">
+                <a href="#" class="header__logo">skb.</a>
+                <input type="text" class="header__input" placeholder="Введите запрос">
+            </div>
+        </header>
+        <section class="section clients">
+            <div class="container clients__container">
+                <h1 class="clients__title">Клиенты</h1>
+                <table class="clients__table">
+                    <thead>
+                        <tr class="table__row table__row--head">
+                            <th class="table__item">
+                                <div class="table__block">
+                                    <p class="table__text">ID</p>
+                                    <div class="table__sort"></div>
+                                </div>
+                            </th>
+                            <th class="table__item">
+                                <div class="table__block">
+                                    <p class="table__text">Фамилия Имя Отчество</p>
+                                    <div class="table__sort"></div>
+                                    <p class="table__text table__text--color">А-Я</p>
+                                </div>
+                            </th>
+                            <th class="table__item">
+                                <div class="table__block">
+                                    <p class="table__text">Дата и время создания</p>
+                                    <div class="table__sort"></div>
+                                </div>
+                            </th>
+                            <th class="table__item">
+                                <div class="table__block">
+                                    <p class="table__text">Последние изменения</p>
+                                    <div class="table__sort"></div>
+                                </div>
+                            </th>
+                            <th class="table__item">
+                                <div class="table__block">
+                                    <p class="table__text">Контакты</p>
+                                </div>
+                            </th>
+                            <th class="table__item">
+                                <div class="table__block">
+                                    <p class="table__text">Действия</p>
+                                </div>
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="table__row">
+                            <td class="table__item table__item--id">
+                                <div class="table__block">
+                                    123455
+                                </div>
+                            </td>
+                            <td class="table__item table__item--fio">
+                                <div class="table__block">
+                                    Скворцов Денис Юрьевич
+                                </div>
+                            </td>
+                            <td class="table__item table__item--date">
+                                <div class="table__block">
+                                    <p class="table__text">21.02.2021</p>
+                                    <p class="table__text table__text--opacity">12:41</p>
+                                </div>
+                            </td>
+                            <td class="table__item table__item--date">
+                                <div class="table__block">
+                                    <p class="table__text">21.02.2021</p>
+                                    <p class="table__text table__text--opacity">14:50</p>
+                                </div>
+                            </td>
+                            <td class="table__item table__item--contacts">
+                                <div class="table__block">
+                                    <a href="" class="table__link table__link--vk"></a>
+                                    <a href="" class="table__link table__link--fb"></a>
+                                    <a href="" class="table__link table__link--tel"></a>
+                                    <a href="" class="table__link table__link--mail"></a>
+                                    <a href="" class="table__link table__link--user"></a>
+                                </div>
+                            </td>
+                            <td class="table__item table__item--actions">
+                                <div class="table__block">
+                                    <button class="table__btn table__btn--change">Изменить</button>
+                                    <button class="table__btn table__btn--delete">Удалить</button>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <button class="clients__btn">Добавить клиента</button>
+            </div>
+        </section>
+        <div class="popup popup--change">
+            <div class="popup__top">
+                <h2 class="popup__title">Изменить данные</h2>
+                <p class="popup__id">ID: 123458</p>
+            </div>
+            <form class="popup__form">
+                <div class="form__row">
+                    <label for="lastName" class="form__label">Фамилия<span class="form__label-color">*</span></label>
+                    <input type="text" class="form__inp" placeholder="Иванов">
+                </div>
+                <div class="form__row">
+                    <label for="lastName" class="form__label">Имя<span class="form__label-color">*</span></label>
+                    <input type="text" class="form__inp" placeholder="Иван">
+                </div>
+                <div class="form__row">
+                    <label for="lastName" class="form__label">Отчество <span class="form__label-color">*</span></label>
+                    <input type="text" class="form__inp" placeholder="Иванович">
+                </div>
+                <div class="form__contacts">
+                    <div class="contacts__row">
+                        <select name="contacts" id="contacts" class="form__select">
+                            <option value="phone">Телефон</option>
+                            <option value="other-phone">Доп. телефон</option>
+                            <option value="email">Email</option>
+                            <option value="vk">Vk</option>
+                            <option value="fb">Fb</option>
+                        </select>
+                        <input type="text" class="form__inp">
+                        <button class="form__button form__btn--remove"></button>
+                    </div>
+                    <div class="contacts__row">
+                        <select name="contacts" id="contacts" class="form__select">
+                            <option value="phone">Телефон</option>
+                            <option value="other-phone">Доп. телефон</option>
+                            <option value="email">Email</option>
+                            <option value="vk">Vk</option>
+                            <option value="fb">Fb</option>
+                        </select>
+                        <input type="text" class="form__inp">
+                        <button class="form__button form__btn--remove"></button>
+                    </div>
+                    <button class="contacts__btn">Добавить контакт</button>
+                </div>
+                <p class="error__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid nulla facere
+                    optio magnam ducimus quo, reiciendis quos commodi iure soluta cumque?</p>
+                <button class="form__btn form__btn--save">Сохранить</button>
+                <button class="form__btn form__btn--delete">Удалить клиента</button>
+            </form>
+            <button class="form__btn-exit"></button>
+        </div>
+        <div class="bg"></div>
+    </div>
+</body>
+
+</html>
