@@ -135,7 +135,7 @@
                         <button class="form__button form__btn--remove"></button>
                     </div>
                     <div class="contacts__row">
-                        <select name="contacts" id="contacts" class="form__select">
+                        <select name="contacts" class="form__select">
                             <option value="phone">Телефон</option>
                             <option value="other-phone">Доп. телефон</option>
                             <option value="email">Email</option>
@@ -152,7 +152,41 @@
                 <button class="form__btn form__btn--save">Сохранить</button>
                 <button class="form__btn form__btn--delete">Удалить клиента</button>
             </form>
-            <button class="form__btn-exit"></button>
+            <button class="popup__btn-exit"></button>
+        </div>
+        <div class="popup popup--delete">
+            <h3 class="popup__title">Удалить клиента</h3>
+            <p class="popup__text">Вы действительно хотите удалить данного клиента?</p>
+            <button class="popup__btn popup__btn--delete">Удалить</button>
+            <button class="popup__btn popup__btn--cancel">Отмена</button>
+            <button class="popup__btn popup__btn-exit"></button>
+        </div>
+        <div class="popup popup--add">
+            <div class="popup__top">
+                <h2 class="popup__title">Новый клиент</h2>
+            </div>
+            <form class="popup__form">
+                <div class="form__row">
+                    <label for="addlastName" class="form__label">Фамилия<span class="form__label-color">*</span></label>
+                    <input type="text" class="form__inp" placeholder="Иванов" id="addlastName">
+                </div>
+                <div class="form__row">
+                    <label for="addFirstName" class="form__label">Имя<span class="form__label-color">*</span></label>
+                    <input type="text" class="form__inp" placeholder="Иван" id="addFirstName">
+                </div>
+                <div class="form__row">
+                    <label for="addSecondName" class="form__label">Отчество <span class="form__label-color">*</span></label>
+                    <input type="text" class="form__inp" placeholder="Иванович" id="addSecondName">
+                </div>
+                <div class="form__contacts">
+                    <button class="contacts__btn">Добавить контакт</button>
+                </div>
+                <!-- <p class="error__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid nulla facere
+                    optio magnam ducimus quo, reiciendis quos commodi iure soluta cumque?</p> -->
+                <button class="form__btn form__btn--save">Сохранить</button>
+                <button class="form__btn form__btn--cancel">Отмена</button>
+            </form>
+            <button class="popup__btn-exit"></button>
         </div>
         <div class="bg"></div>
     </div>
